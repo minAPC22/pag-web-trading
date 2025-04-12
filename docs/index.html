@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINS INTERNACIONAL</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body class="bg-light">
+
+    <!-- Header con Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand text-primary fw-bold" href="#">MINS INTERNACIONAL</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Buscar">
+                    <button class="btn btn-outline-primary" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección de cards -->
+    <section class="container my-5">
+        <h2 class="text-center text-dark mb-4" >Nuestro Equipo</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card shadow-sm equipo-card">
+                    <img src="ChatGPT Image 12 abr 2025, 16_34_18.png" class="card-img-top" alt="Miembro"  width="300" height="200">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Ludim Barrios</h5>
+                        <p class="card-text">Marketing</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow-sm equipo-card">
+                    <img src="m.png" class="card-img-top" alt="Miembro"  width="300" height="200">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">El pichiboy</h5>
+                        <p class="card-text">CEO</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm equipo-card">
+                    <img src="i.jpg" class="card-img-top" alt="Miembro" width="300" height="200">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Iván Mejía "EL MINER"</h5>
+                        <p class="card-text">Fundador</p>
+                    </div>
+                </div>
+            </div> <div class="col-md-4">
+                <div class="card shadow-sm equipo-card">
+                    <img src="g.jpg" class="card-img-top" alt="Miembro" width="300" height="200">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Señor Chorizo</h5>
+                        <p class="card-text">Gestor emocional</p>
+                    </div>
+                </div>
+            </div> <div class="col-md-4">
+                <div class="card shadow-sm equipo-card">
+                    <img src="jfer.jpeg" class="card-img-top" alt="Miembro" width="300" height="200">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">J Fer "Casanova"</h5>
+                        <p class="card-text">Gerente financiero </p>
+                    </div>
+                </div>
+            </div> <div class="col-md-4">
+                <div class="card shadow-sm equipo-card">
+                    <img src="y.jpeg" class="card-img-top" alt="Miembro" width="300" height="200">>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Yariana</h5>
+                        <p class="card-text">puyona del CEO</p>
+                    </div>
+                </div>
+            </div> <div class="col-md-4">
+                <div class="card shadow-sm equipo-card">
+                    <img src="erlys.jpeg" class="card-img-top" alt="Miembro" width="300" height="200">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Erlys Barraza</h5>
+                        <p class="card-text">cogerente</p>
+                    </div>
+                </div>
+            </div> <div class="col-md-4">
+                <div class="card shadow-sm equipo-card">
+                    <img src="duke.jpeg" class="card-img-top" alt="Miembro" width="300" height="200">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">El de la DUKE</h5>
+                        <p class="card-text">El negociador</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p class="m-0">© 2025 MINS INTERNACIONAL. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          // ANIMACIÓN DE APERTURA DEL BODY
+          document.body.classList.add('fade-in');
+      
+          // OBSERVADOR PARA ANIMAR CARDS AL HACER SCROLL
+          const animatedCards = document.querySelectorAll('.animate-on-scroll');
+          const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+              }
+            });
+          }, { threshold: 0.1 });
+      
+          animatedCards.forEach(card => observer.observe(card));
+      
+          // MODO OSCURO/CLARO CON TOGGLE
+          const toggleBtn = document.createElement("button");
+          toggleBtn.innerHTML = "🌙";
+          toggleBtn.className = "btn btn-primary position-fixed bottom-0 end-0 m-4 rounded-circle shadow-lg";
+          toggleBtn.style.width = "60px";
+          toggleBtn.style.height = "60px";
+          toggleBtn.style.zIndex = "1000";
+          document.body.appendChild(toggleBtn);
+      
+          let darkMode = true;
+      
+          toggleBtn.addEventListener("click", () => {
+            darkMode = !darkMode;
+            document.body.classList.toggle("light-mode");
+            toggleBtn.innerHTML = darkMode ? "🌙" : "☀️";
+          });
+      
+          // EFECTO DE HOVER EN CARDS (OPCIONAL CON SONIDO)
+          const cards = document.querySelectorAll(".equipo-card");
+      
+          cards.forEach(card => {
+            card.addEventListener("mouseenter", () => {
+              card.style.transform = "scale(1.05) rotate(-1deg)";
+              card.style.boxShadow = "0 12px 30px rgba(0, 170, 255, 0.4)";
+      
+              // OPCIONAL: SONIDO AL PASAR
+              // const sound = new Audio('hover.mp3');
+              // sound.play();
+            });
+      
+            card.addEventListener("mouseleave", () => {
+              card.style.transform = "scale(1)";
+              card.style.boxShadow = "none";
+            });
+          });
+      
+          // DETECCIÓN DE DISPOSITIVO
+          const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+          console.log("Estás en un dispositivo: ", isMobile ? "📱 MÓVIL" : "💻 PC");
+      
+          // SCROLL SUAVE (POR SI USAS ANCLAS)
+          const smoothLinks = document.querySelectorAll('a[href^="#"]');
+          for (let link of smoothLinks) {
+            link.addEventListener("click", function(e) {
+              e.preventDefault();
+              const target = document.querySelector(this.getAttribute("href"));
+              if (target) {
+                target.scrollIntoView({ behavior: "smooth" });
+              }
+            });
+          }
+        });
+      </script>
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          // SONIDO AL CARGAR LA PÁGINA
+          const introSound = new Audio("sonidos/intro.mp3");
+          introSound.volume = 0.3;
+          introSound.play();
+      
+          // ANIMACIÓN DE ENTRADA
+          document.body.classList.add('fade-in');
+      
+          // OBSERVADOR PARA ANIMAR CARDS
+          const animatedCards = document.querySelectorAll('.animate-on-scroll');
+          const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+              }
+            });
+          }, { threshold: 0.1 });
+      
+          animatedCards.forEach(card => observer.observe(card));
+      
+          // BOTÓN MODO OSCURO/CLARO
+          const toggleBtn = document.createElement("button");
+          toggleBtn.innerHTML = "🌙";
+          toggleBtn.className = "btn btn-primary position-fixed bottom-0 end-0 m-4 rounded-circle shadow-lg";
+          toggleBtn.style.width = "60px";
+          toggleBtn.style.height = "60px";
+          toggleBtn.style.zIndex = "1000";
+          document.body.appendChild(toggleBtn);
+      
+          const clickSound = new Audio("sonidos/click.mp3");
+          clickSound.volume = 0.4;
+      
+          let darkMode = true;
+      
+          toggleBtn.addEventListener("click", () => {
+            darkMode = !darkMode;
+            document.body.classList.toggle("light-mode");
+            toggleBtn.innerHTML = darkMode ? "🌙" : "☀️";
+            clickSound.play();
+          });
+      
+          // EFECTO DE HOVER CON SONIDO
+          const hoverSound = new Audio("sonidos/hover.mp3");
+          hoverSound.volume = 0.2;
+      
+          const cards = document.querySelectorAll(".equipo-card");
+      
+          cards.forEach(card => {
+            card.addEventListener("mouseenter", () => {
+              card.style.transform = "scale(1.05) rotate(-1deg)";
+              card.style.boxShadow = "0 12px 30px rgba(0, 170, 255, 0.4)";
+              hoverSound.currentTime = 0;
+              hoverSound.play();
+            });
+      
+            card.addEventListener("mouseleave", () => {
+              card.style.transform = "scale(1)";
+              card.style.boxShadow = "none";
+            });
+          });
+      
+          // DETECCIÓN DE DISPOSITIVO
+          const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+          console.log("Estás en un dispositivo: ", isMobile ? "📱 MÓVIL" : "💻 PC");
+      
+          // SCROLL SUAVE
+          const smoothLinks = document.querySelectorAll('a[href^="#"]');
+          for (let link of smoothLinks) {
+            link.addEventListener("click", function(e) {
+              e.preventDefault();
+              const target = document.querySelector(this.getAttribute("href"));
+              if (target) {
+                target.scrollIntoView({ behavior: "smooth" });
+              }
+            });
+          }
+        });
+      </script>
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+body{
+    background: url("stars-964022_1920.png");
+    color: white;
+}
+header h1 {
+    font-size: 1.8rem;
+    color: #00aaff;
+}
+
+nav .nav-link:hover {
+    color: #00aaff;
+}
+
+.card-title {
+    color: #000000;
+}
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+}
+.card-body{
+    background: linear-gradient(rgb(40, 40, 41),white);
+}
+/* MODO CLARO PERSONALIZADO */
+body.light-mode {
+    background: #f0f0f0 !important;
+    color: #111 !important;
+  }
+  
+  body.light-mode .card-body {
+    background: linear-gradient(to bottom, white, #f0f0f0) !important;
+    color: #000 !important;
+  }
+  
+  body.light-mode .card-title {
+    color: #000 !important;
+  }
+  
+  body.light-mode .navbar {
+    background-color: #ffffff !important;
+  }
+  
+  body.light-mode .nav-link {
+    color: #333 !important;
+  }
+  
+  body.light-mode .nav-link:hover {
+    color: #00aaff !important;
+  }
+  
+  body.light-mode footer {
+    background-color: #ddd !important;
+    color: #000 !important;
+  }
+  
